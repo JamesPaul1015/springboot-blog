@@ -3,17 +3,17 @@ package com.codeup.springbootblog;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-@Controller
 
-public class HomeController {
+public class HelloController {
 
-
+    @Controller
+    class HomeController {
 
         @GetMapping("/hello")
         @ResponseBody
         public String hello() {
-            return "This is the landing page!";
+            return "Hello from Spring!";
         }
-
+    }
 
 }
